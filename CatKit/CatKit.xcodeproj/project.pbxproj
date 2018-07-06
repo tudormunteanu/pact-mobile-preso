@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F0B2AB52AEBFD45F8928A06 /* Pods_CatKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9E93C12D909323E264C57 /* Pods_CatKitTests.framework */; };
+		91E3657620EFB2A100D49B5B /* MobileBFFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E3657520EFB2A100D49B5B /* MobileBFFClient.swift */; };
 		A1EE18611A9D8E4F008B0E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18601A9D8E4F008B0E8C /* AppDelegate.swift */; };
 		A1EE18631A9D8E4F008B0E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18621A9D8E4F008B0E8C /* ViewController.swift */; };
 		A1EE18661A9D8E4F008B0E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EE18641A9D8E4F008B0E8C /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		4CD9E93C12D909323E264C57 /* Pods_CatKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F655D8523E0E958171B8B4E /* Pods-CatKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatKit/Pods-CatKit.release.xcconfig"; sourceTree = "<group>"; };
 		910B79A33DF3A0D96BF341BB /* Pods-CatKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatKit/Pods-CatKit.debug.xcconfig"; sourceTree = "<group>"; };
+		91E3657520EFB2A100D49B5B /* MobileBFFClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileBFFClient.swift; sourceTree = "<group>"; };
 		92F6715B50D71AC2312277F0 /* Pods-CatKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatKitTests/Pods-CatKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1EE185B1A9D8E4F008B0E8C /* CatKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EE185F1A9D8E4F008B0E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,13 +102,14 @@
 		A1EE185D1A9D8E4F008B0E8C /* CatKit */ = {
 			isa = PBXGroup;
 			children = (
-				A1EE18821A9D8FEC008B0E8C /* CatKitClient.swift */,
 				A1EE18601A9D8E4F008B0E8C /* AppDelegate.swift */,
-				A1EE18621A9D8E4F008B0E8C /* ViewController.swift */,
-				A1EE18641A9D8E4F008B0E8C /* Main.storyboard */,
+				A1EE18821A9D8FEC008B0E8C /* CatKitClient.swift */,
 				A1EE18671A9D8E4F008B0E8C /* Images.xcassets */,
 				A1EE18691A9D8E4F008B0E8C /* LaunchScreen.xib */,
+				A1EE18641A9D8E4F008B0E8C /* Main.storyboard */,
+				91E3657520EFB2A100D49B5B /* MobileBFFClient.swift */,
 				A1EE185E1A9D8E4F008B0E8C /* Supporting Files */,
+				A1EE18621A9D8E4F008B0E8C /* ViewController.swift */,
 			);
 			path = CatKit;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1EE18631A9D8E4F008B0E8C /* ViewController.swift in Sources */,
+				91E3657620EFB2A100D49B5B /* MobileBFFClient.swift in Sources */,
 				A1EE18831A9D8FEC008B0E8C /* CatKitClient.swift in Sources */,
 				A1EE18611A9D8E4F008B0E8C /* AppDelegate.swift in Sources */,
 			);
