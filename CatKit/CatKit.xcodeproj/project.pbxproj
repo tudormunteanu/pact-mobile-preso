@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0B2AB52AEBFD45F8928A06 /* Pods_CatKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD9E93C12D909323E264C57 /* Pods_CatKitTests.framework */; };
 		A1EE18611A9D8E4F008B0E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18601A9D8E4F008B0E8C /* AppDelegate.swift */; };
 		A1EE18631A9D8E4F008B0E8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18621A9D8E4F008B0E8C /* ViewController.swift */; };
 		A1EE18661A9D8E4F008B0E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1EE18641A9D8E4F008B0E8C /* Main.storyboard */; };
@@ -14,12 +15,7 @@
 		A1EE186B1A9D8E4F008B0E8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1EE18691A9D8E4F008B0E8C /* LaunchScreen.xib */; };
 		A1EE18811A9D8FDE008B0E8C /* CatKitClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18801A9D8FDE008B0E8C /* CatKitClientSpec.swift */; };
 		A1EE18831A9D8FEC008B0E8C /* CatKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EE18821A9D8FEC008B0E8C /* CatKitClient.swift */; };
-		A1EE18851A9D9014008B0E8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE18841A9D9014008B0E8C /* Alamofire.framework */; };
-		A1EE18861A9D902A008B0E8C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE18841A9D9014008B0E8C /* Alamofire.framework */; };
-		A1EE188B1A9D902B008B0E8C /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE18871A9D902A008B0E8C /* PactConsumerSwift.framework */; };
-		A1EE188C1A9D902B008B0E8C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE18881A9D902A008B0E8C /* Quick.framework */; };
-		A1EE188D1A9D902B008B0E8C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE18891A9D902A008B0E8C /* Nimble.framework */; };
-		A1EE188E1A9D902B008B0E8C /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1EE188A1A9D902A008B0E8C /* BrightFutures.framework */; };
+		DCB55EE9CB745D579D849DCD /* Pods_CatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B53ADCA5FD86B99D1E554F8 /* Pods_CatKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B53ADCA5FD86B99D1E554F8 /* Pods_CatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD9E93C12D909323E264C57 /* Pods_CatKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F655D8523E0E958171B8B4E /* Pods-CatKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatKit/Pods-CatKit.release.xcconfig"; sourceTree = "<group>"; };
+		910B79A33DF3A0D96BF341BB /* Pods-CatKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatKit/Pods-CatKit.debug.xcconfig"; sourceTree = "<group>"; };
+		92F6715B50D71AC2312277F0 /* Pods-CatKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatKitTests/Pods-CatKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1EE185B1A9D8E4F008B0E8C /* CatKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EE185F1A9D8E4F008B0E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EE18601A9D8E4F008B0E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,11 +45,7 @@
 		A1EE18751A9D8E4F008B0E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EE18801A9D8FDE008B0E8C /* CatKitClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatKitClientSpec.swift; sourceTree = "<group>"; };
 		A1EE18821A9D8FEC008B0E8C /* CatKitClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatKitClient.swift; sourceTree = "<group>"; };
-		A1EE18841A9D9014008B0E8C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		A1EE18871A9D902A008B0E8C /* PactConsumerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PactConsumerSwift.framework; path = Carthage/Build/iOS/PactConsumerSwift.framework; sourceTree = "<group>"; };
-		A1EE18881A9D902A008B0E8C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
-		A1EE18891A9D902A008B0E8C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		A1EE188A1A9D902A008B0E8C /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
+		DD18223D1EFA350E893D7A96 /* Pods-CatKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatKitTests/Pods-CatKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EE18851A9D9014008B0E8C /* Alamofire.framework in Frameworks */,
+				DCB55EE9CB745D579D849DCD /* Pods_CatKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,28 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EE188B1A9D902B008B0E8C /* PactConsumerSwift.framework in Frameworks */,
-				A1EE188C1A9D902B008B0E8C /* Quick.framework in Frameworks */,
-				A1EE188D1A9D902B008B0E8C /* Nimble.framework in Frameworks */,
-				A1EE188E1A9D902B008B0E8C /* BrightFutures.framework in Frameworks */,
-				A1EE18861A9D902A008B0E8C /* Alamofire.framework in Frameworks */,
+				5F0B2AB52AEBFD45F8928A06 /* Pods_CatKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43104A3AB233ECFED2553739 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B53ADCA5FD86B99D1E554F8 /* Pods_CatKit.framework */,
+				4CD9E93C12D909323E264C57 /* Pods_CatKitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1EE18521A9D8E4F008B0E8C = {
 			isa = PBXGroup;
 			children = (
-				A1EE18871A9D902A008B0E8C /* PactConsumerSwift.framework */,
-				A1EE18881A9D902A008B0E8C /* Quick.framework */,
-				A1EE18891A9D902A008B0E8C /* Nimble.framework */,
-				A1EE188A1A9D902A008B0E8C /* BrightFutures.framework */,
-				A1EE18841A9D9014008B0E8C /* Alamofire.framework */,
 				A1EE185D1A9D8E4F008B0E8C /* CatKit */,
 				A1EE18731A9D8E4F008B0E8C /* CatKitTests */,
 				A1EE185C1A9D8E4F008B0E8C /* Products */,
+				CAF46D7CA86A570A0A5E8CF4 /* Pods */,
+				43104A3AB233ECFED2553739 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +136,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CAF46D7CA86A570A0A5E8CF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				910B79A33DF3A0D96BF341BB /* Pods-CatKit.debug.xcconfig */,
+				5F655D8523E0E958171B8B4E /* Pods-CatKit.release.xcconfig */,
+				DD18223D1EFA350E893D7A96 /* Pods-CatKitTests.debug.xcconfig */,
+				92F6715B50D71AC2312277F0 /* Pods-CatKitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,10 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1EE187A1A9D8E4F008B0E8C /* Build configuration list for PBXNativeTarget "CatKit" */;
 			buildPhases = (
+				B365FFE071862696148819F9 /* [CP] Check Pods Manifest.lock */,
 				A1EE18571A9D8E4F008B0E8C /* Sources */,
 				A1EE18581A9D8E4F008B0E8C /* Frameworks */,
 				A1EE18591A9D8E4F008B0E8C /* Resources */,
 				A1EE188F1A9D9032008B0E8C /* ShellScript */,
+				4958FFA4134302427143329F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,10 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1EE187D1A9D8E4F008B0E8C /* Build configuration list for PBXNativeTarget "CatKitTests" */;
 			buildPhases = (
+				71701F3FBAC17698658D835F /* [CP] Check Pods Manifest.lock */,
 				A1EE186C1A9D8E4F008B0E8C /* Sources */,
 				A1EE186D1A9D8E4F008B0E8C /* Frameworks */,
 				A1EE186E1A9D8E4F008B0E8C /* Resources */,
 				A1EE18901A9D9086008B0E8C /* ShellScript */,
+				2C255C7C76CC132216D78C1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,19 +252,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2C255C7C76CC132216D78C1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatKitTests/Pods-CatKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/PactConsumerSwift/PactConsumerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PactConsumerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatKitTests/Pods-CatKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4958FFA4134302427143329F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatKit/Pods-CatKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BrightFutures/BrightFutures.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/PactConsumerSwift/PactConsumerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightFutures.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PactConsumerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatKit/Pods-CatKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71701F3FBAC17698658D835F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A1EE188F1A9D9032008B0E8C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH";
 		};
 		A1EE18901A9D9086008B0E8C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -258,18 +345,30 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PactConsumerSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/BrightFutures.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\ncarthage copy-frameworks";
+			shellScript = "PATH=/usr/local/bin:/opt/boxen/homebrew/bin:$PATH\n";
+		};
+		B365FFE071862696148819F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -362,6 +461,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,6 +497,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,38 +505,35 @@
 		};
 		A1EE187B1A9D8E4F008B0E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910B79A33DF3A0D96BF341BB /* Pods-CatKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CatKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spinks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		A1EE187C1A9D8E4F008B0E8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F655D8523E0E958171B8B4E /* Pods-CatKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CatKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spinks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 		A1EE187E1A9D8E4F008B0E8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD18223D1EFA350E893D7A96 /* Pods-CatKitTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -451,13 +549,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spinks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatKit.app/CatKit";
 			};
 			name = Debug;
 		};
 		A1EE187F1A9D8E4F008B0E8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F6715B50D71AC2312277F0 /* Pods-CatKitTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -469,7 +568,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "spinks.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatKit.app/CatKit";
 			};
 			name = Release;

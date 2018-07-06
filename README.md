@@ -1,9 +1,9 @@
 # Sample iOS Swift consumer and ruby provider.
 This is a demonstration project for using the [Swift Pact library](https://github.com/DiUS/pact-consumer-swift).
 
-### To build and run Pact Swift Tests
-The application uses Carthage for building library dependencies. If you are not familiar with carthage, see [Carthage](https://github.com/Carthage/Carthage) for more details.
+This fork contains an update for Xcode 9.4 and Swift 4.1 as well as replacing Carthage with CocoaPods.
 
+### To build and run Pact Swift Tests
 * Install the pact mock service gem (required for running the iOS Pact tests).
 ```
 gem install pact-mock_service -v 0.9.0
@@ -12,20 +12,25 @@ gem install pact-mock_service -v 0.9.0
 
 * Download and compile the iOS library dependencies:
 ```
-CatKit $ carthage bootstrap --no-use-binaries  --platform iOS
+CatKit $ pod install 
 ```
 (Execute from the CatKit directory)
 
 * Run the iOS unit tests. (can be done from within XCode if you prefer)
 ```
-CatKit $ xcodebuild -project CatKit.xcodeproj -scheme CatKit clean test -sdk iphonesimulator
+CatKit $ xcodebuild -workspace CatKit.xcworkspace -scheme CatKit clean test -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8"
 ```
+
 This will run the unit tests (Pact Tests). After the pact tests run successfully the generated pact files should live in the `CatKit/tmp/pacts/` directory. A log of the pact test interactions can be found here `CatKit/tmp/pact.log`. If the tests fail, try looking in here for details as to why.
 
 ### Verify the ruby server with the generated pact file
 Copy over the generated pact file from the iOS project, to the ruby server.
 ```
 catkit-server $ cp ../CatKit/tmp/pacts/catkit_ios_app-catkit_service.json pacts/ios-app/
+```
+Install the required gems
+```
+catkit-server $ bundle install
 ```
 (Execute from the catkit-server directory)
 

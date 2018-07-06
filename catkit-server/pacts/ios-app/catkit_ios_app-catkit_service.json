@@ -21,8 +21,8 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "message": "Meow!",
-          "status": "happy"
+          "status": "happy",
+          "message": "Meow!"
         }
       }
     },
@@ -42,8 +42,8 @@
           "Content-Type": "application/json"
         },
         "body": {
-          "message": "Out of food dude",
-          "status": "grumpy"
+          "status": "grumpy",
+          "message": "Out of food dude"
         }
       }
     }

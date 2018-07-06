@@ -29,5 +29,7 @@ doc/
 
 # Gems
 /vendor/ruby
+**Gemfile.lock
+
 
 .env

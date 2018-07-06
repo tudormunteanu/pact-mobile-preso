@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     self.catKitClient.feedMe { (response, status) -> Void in
       self.catImageView.image = UIImage(named: "satisfied")
       self.responseText.text = response
-      self.responseText.hidden = false
-      self.feedMeButton.hidden = true
+        self.responseText.isHidden = false
+        self.feedMeButton.isHidden = true
     }
   }
 }

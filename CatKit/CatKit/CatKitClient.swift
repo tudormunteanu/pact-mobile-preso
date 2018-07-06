@@ -7,12 +7,12 @@ public class CatKitClient {
     self.baseUrl = baseUrl
   }
   
-  public func feedMe(feedMeResponse: (String, String) -> Void) {
+    public func feedMe(feedMeResponse: @escaping (String, String) -> Void) {
     let headers = [
       "Accept": "application/json"
     ]
     
-    Alamofire.request(.GET, "\(baseUrl)/feed-me", headers: headers)
+    Alamofire.request("\(baseUrl)/feed-me", headers: headers)
       .responseJSON { (result) in
         if let json = result.result.value as? Dictionary<String, String> {
           feedMeResponse(json["message"]!, json["status"]!)

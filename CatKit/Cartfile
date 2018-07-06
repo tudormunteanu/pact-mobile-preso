@@ -1,5 +1,0 @@
-github "Alamofire/Alamofire"
-
-github "Quick/Quick"
-github "Quick/Nimble"
-github "DiUS/pact-consumer-swift" ~> 0.3
