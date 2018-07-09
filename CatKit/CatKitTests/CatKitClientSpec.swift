@@ -8,6 +8,8 @@ let APPLICATION_JSON = "application/json"
 class MobileBFFClientSpec: QuickSpec {
     override func spec() {
         var mobileBFFService: MockService?
+        // TODO: Replace the API Client with the app specific one when
+        // integrating these tests into the real app.
         var mobileBFFClient: MobileBFFClient?
         
         describe("test requests to Mobile BFF") {
@@ -36,6 +38,8 @@ class MobileBFFClientSpec: QuickSpec {
                 // Run the tests
                 mobileBFFService!.run { (testComplete) -> Void in
                     mobileBFFClient!.getItems { (items) -> Void in
+                        // TODO: Replace these assertions with the actual data structures used
+                        // within the app.
                         expect(items.count).to(equal(1))
                         expect(items[0]["title"] as! String).to(equal("Critical Role"))
                         expect(items[0]["category"] as! String).to(equal("Games & Hobbies"))
