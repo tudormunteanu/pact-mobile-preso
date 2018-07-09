@@ -23,7 +23,7 @@ CatKit $ xcodebuild -workspace CatKit.xcworkspace -scheme CatKit clean test -sdk
 
 This will run the unit tests (Pact Tests). After the pact tests run successfully the generated pact files should live in the `CatKit/tmp/pacts/` directory. A log of the pact test interactions can be found here `CatKit/tmp/pact.log`. If the tests fail, try looking in here for details as to why.
 
-### Verify the server with the generated pact file
+### Verifying against a service
 
 Use [pipenv](https://docs.pipenv.org/) to install `pact-python` by running:
 
