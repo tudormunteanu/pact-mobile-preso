@@ -18,7 +18,7 @@ class MobileBFFClientSpec: QuickSpec {
                 mobileBFFClient = MobileBFFClient(baseUrl: mobileBFFService!.baseUrl)
             }
             
-            // MARK: /v1/items
+            // MARK: - /v1/items
             it("returns a list of items") {
                 mobileBFFService!.uponReceiving("a list of items")
                     .withRequest(method: .GET, path: "/v1/items", headers: ["Accept": APPLICATION_JSON])
@@ -51,7 +51,7 @@ class MobileBFFClientSpec: QuickSpec {
                 }
             }
             
-            // MARK: /v1/items/<id>
+            // MARK: - /v1/items/<id>
             it("returns a single item") {
                 mobileBFFService!.uponReceiving("a single item")
                     .withRequest(method: .GET, path: "/v1/items/1", headers: ["Accept": APPLICATION_JSON])
@@ -82,7 +82,7 @@ class MobileBFFClientSpec: QuickSpec {
                 }
             }
 
-            // MARK: /v1/pages/<slug>
+            // MARK: - /v1/pages/<slug>
             it("returns single page based on the slug") {
                 mobileBFFService!.uponReceiving("a single page")
                     .withRequest(method: .GET, path: "/v1/pages/podcasts", headers: ["Accept": APPLICATION_JSON])
