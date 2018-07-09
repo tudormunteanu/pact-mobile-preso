@@ -40,6 +40,7 @@ Next step is to check the generated .json against the server responses:
 Don't forget to change <server_url> to the server address you'd like to test.
 
 # More reading
+* [Publishing a Pack](https://github.com/pact-foundation/pact_broker/wiki/Publishing-and-retrieving-pacts)
 * [Swift Pact library](https://github.com/DiUS/pact-consumer-swift)
 * The original pact library, with lots of background and guidelines [Pact](https://github.com/realestate-com-au/pact)
 * The pact mock server that the Swift library uses under the hood [Pact mock service](https://github.com/bethesque/pact-mock_service)
