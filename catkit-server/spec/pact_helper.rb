@@ -3,7 +3,7 @@ require 'pact/provider/rspec'
 Pact.service_provider "CatKit Service" do
 
   honours_pact_with 'CatKit iOS App' do
-    pact_uri './pacts/ios-app/catkit_ios_app-catkit_service.json'
+    pact_uri './pacts/ios-app/ios-app-guacamole-mobile-bff.json'
   end
 end
 

@@ -25,9 +25,27 @@ public class MobileBFFClient {
         }
     }
     
-    public func getItem(id: String, response: @escaping (Dictionary<String, Any>) -> Void) {
+    public func getItem(id: String, response: @escaping (Dictionary<String, Any>) -> Void, failure: @escaping () -> Void) {
         
         Alamofire.request("\(baseUrl)/v1/items/\(id)", headers: self.headers)
+            .validate(statusCode: 200..<300)
+            .responseJSON { (result) in
+                if result.result.isFailure {
+                    failure()
+                } else if let json = result.result.value as? Dictionary<String, Any> {
+                    var item = Dictionary<String, Any>()
+                    for (key, value) in json {
+                        item[key] = value
+                    }
+                    response(item)
+                }
+        }
+    }
+    
+    public func getPage(slug: String, response: @escaping (Dictionary<String, Any>) -> Void) {
+        
+        Alamofire.request("\(baseUrl)/v1/pages/\(slug)", headers: self.headers)
+            .validate(statusCode: 200..<300)
             .responseJSON { (result) in
                 if let json = result.result.value as? Dictionary<String, Any> {
                     var item = Dictionary<String, Any>()
