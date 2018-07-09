@@ -23,26 +23,21 @@ CatKit $ xcodebuild -workspace CatKit.xcworkspace -scheme CatKit clean test -sdk
 
 This will run the unit tests (Pact Tests). After the pact tests run successfully the generated pact files should live in the `CatKit/tmp/pacts/` directory. A log of the pact test interactions can be found here `CatKit/tmp/pact.log`. If the tests fail, try looking in here for details as to why.
 
-### Verify the ruby server with the generated pact file
-Copy over the generated pact file from the iOS project, to the ruby server.
-```
-catkit-server $ cp ../CatKit/tmp/pacts/catkit_ios_app-catkit_service.json pacts/ios-app/
-```
-Install the required gems
-```
-catkit-server $ bundle install
-```
-(Execute from the catkit-server directory)
+### Verify the server with the generated pact file
 
-Run the pact verification to verify that the server conforms to the CatKit client.
-```
-catkit-server $ bundle exec rake pact:verify
-```
+Use [pipenv](https://docs.pipenv.org/) to install `pact-python` by running:
 
-NB: to run the catkit-server:
-```
-catkit-server $ bundle exec rackup config.ru
-```
+	pip install pipenv
+	pipenv install
+	pipenv --python=3.7
+	pipenv shell
+	pip install pact-python
+
+Next step is to check the generated .json against the server responses:
+
+	CatKit $ pact-verifier --provider-base-url=<server_url> --pact-url=./tmp/pacts/ios-app-guacamole-mobile-bff.json 
+
+Don't forget to change <server_url> to the server address you'd like to test.
 
 # More reading
 * [Swift Pact library](https://github.com/DiUS/pact-consumer-swift)
