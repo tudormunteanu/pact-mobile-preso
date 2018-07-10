@@ -30,9 +30,9 @@ If running the tests from Xcode and use **rvm**, follow the next steps:
 3. In the script area enter:
 
 ```
-	source ~/.bash_profile
-	rvm use 2.3.1
-	"$SRCROOT"/Pods/PactConsumerSwift/scripts/start_server.sh
+source ~/.bash_profile
+rvm use 2.3.1
+"$SRCROOT"/Pods/PactConsumerSwift/scripts/start_server.sh
 ```
 
 4. For "Post-actions" add:
