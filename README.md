@@ -23,6 +23,28 @@ CatKit $ xcodebuild -workspace CatKit.xcworkspace -scheme CatKit clean test -sdk
 
 This will run the unit tests (Pact Tests). After the pact tests run successfully the generated pact files should live in the `CatKit/tmp/pacts/` directory. A log of the pact test interactions can be found here `CatKit/tmp/pact.log`. If the tests fail, try looking in here for details as to why.
 
+If running the tests from Xcode and use **rvm**, follow the next steps:
+
+1. Open the current Xcode Schema and under Test, click on "Pre-actions".
+2. For Shell enter "/bin/bash".
+3. In the script area enter:
+
+```
+	source ~/.bash_profile
+	rvm use 2.3.1
+	"$SRCROOT"/Pods/PactConsumerSwift/scripts/start_server.sh
+```
+
+4. For "Post-actions" add:
+
+```
+source ~/.bash_profile
+rvm use 2.3.1
+"$SRCROOT"/Pods/PactConsumerSwift/scripts/stop_server.sh
+```
+
+*NB:* This assumes that `bash` is available and RVM is setup from the `.bash_profile` file. You can change ruby version 2.3.1 to any version > 2.3.
+
 ### Verifying against a service
 
 Use [pipenv](https://docs.pipenv.org/) to install `pact-python` by running:
